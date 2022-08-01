@@ -1,47 +1,94 @@
-body{
-    background-color: #6b6b6b;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-h1{
-    text-align: center;
-    font-size: xx-large;
-    font-family:Arial, Helvetica, sans-serif;
-    color: white;
+.typewriter1 h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
 
-.typewriter h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid black; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
+.typewriter2{
+  display: none;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+#hi{
+  background-image: url("../img/img001.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  color: white;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+#hi p{
+  font-size: x-large;
+}
+
+#hi h1{
+  font-size: xx-large;
+}
+
+#hi #block1{
+  margin-top: 20%;
+  margin-left: 20%;
+  position: relative;
+}
+
+#scroll{
+  background-image: url("../img/scrolldown.svg");
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media only screen and (orientation: portrait){
+  .typewriter2{
+      display: block;
+  }
+  .typewriter1{
+    display: none;
+  }
+
+  #hi p{
+    font-size: large;
   }
   
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+  #hi h1{
+    font-size: x-large;
+  }
+
+  #hi #block1{
+    margin-left: 20px;
+  }
+
+  #scroll{
+    right: 20px;
   }
   
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: black; }
-  }
-
-
-.social{
-    text-align: center;
-}
-
-.info{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
 }
