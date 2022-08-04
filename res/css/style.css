@@ -5,12 +5,16 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html{
+  scroll-behavior: smooth; /* Aplicando rolagem suave */
+}
+
+/*section 1*/
 .typewriter1 h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid black; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
@@ -32,7 +36,7 @@
   50% { border-color: white; }
 }
 
-#hi{
+#home{
   background-image: url("../img/img001.jpg");
   background-repeat: no-repeat;
   background-size:cover;
@@ -40,19 +44,19 @@
   color: white;
   position: relative;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-#hi p{
+#home p{
   font-size: x-large;
 }
 
-#hi h1{
+#home h1{
   font-size: xx-large;
 }
 
-#hi #block1{
+#home #block1{
   margin-top: 20%;
   margin-left: 20%;
   position: relative;
@@ -67,23 +71,59 @@
   right: 0;
 }
 
-@media only screen and (orientation: portrait){
-  .typewriter2{
-      display: block;
-  }
-  .typewriter1{
-    display: none;
-  }
+/*Sction 2*/
+#about-me{
+  display: flex;
+  flex-direction:row;
+  height: 100vh;
+  width: 100%;
+}
 
-  #hi p{
+.me{
+  background-color: brown;
+  width: 20%;
+}
+.about{
+  background-color: rgb(37, 37, 37);
+  width: 80%;
+}
+
+/*Menubar*/
+.menubar {
+  top: 0;
+  height:40px;
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  background-color: #0000004b;
+  color: white;
+  backdrop-filter: blur(12.0px);
+}
+
+.menubar a{
+  color: white;
+  text-decoration:none;
+  margin-right: 15px;
+}
+
+menu a:visited{
+  color: white;
+}
+
+/*Screen adjusts*/
+@media only screen and (orientation: portrait){
+
+  #home p{
     font-size: large;
   }
   
-  #hi h1{
+  #home h1{
     font-size: x-large;
   }
 
-  #hi #block1{
+  #home #block1{
+    margin-top: 40%;
     margin-left: 20px;
   }
 
