@@ -73,6 +73,9 @@ html{
 
 /*Sction 2*/
 #about-me{
+  background-image: url("../img/img002.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
   display: flex;
   flex-direction:row;
   height: 100vh;
@@ -80,11 +83,77 @@ html{
 }
 
 .me{
-  background-color: brown;
-  width: 20%;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 70%;
+  margin:0 auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.about{
-  background-color: rgb(37, 37, 37);
+
+.profileIMG{
+  background-image: url("../img/eu.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  border-radius: 100%;
+  width: 128px;
+  height: 128px;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.profileData{
+  display:inline-block; /* ou float:left, vai do seu uso */
+  color:dodgerblue;
+  background-color:white;
+  border-bottom:10px solid white;
+  border-left:12px solid transparent;
+  background-clip: padding-box;
+  padding: 10px 10px 10px 10px;
+  height: 120px;
+  width: 280px;
+  margin-top: 40px;
+  margin-left: 10px;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#msg{
+  display: flex;
+}
+
+#info{
+  background-color: white;
+  width: 50%;
+  height: 100px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 30px;
+  display: flex;
+}
+.uniIMG{
+  background-image: url("../img/logouff.jpg");
+  width: 90px;
+  height: 90px;
+}
+.skillIMG{
+  background-image: url("../img/skills.png");
+  width: 80px;
+  height: 72px;
+}
+.uniIMG, .skillIMG{
+  background-repeat: no-repeat;
+  background-size:cover;
+  margin-left: 5px;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+.uniData{
+  color:dodgerblue;
+  margin-top: 15px;
+  margin-left: 5px;
   width: 80%;
 }
 
@@ -130,5 +199,26 @@ menu a:visited{
   #scroll{
     right: 20px;
   }
-  
+
+  .me{
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .profileIMG{
+    width: 80px;
+    height: 80px;
+    margin-top: 50px;
+    margin-left: 5px;
+  }
+
+  .profileData{
+    margin-top: 20px;
+  }
+
+  #info{
+    width: 95%;
+    margin-left: 5px;
+  }
+
 }
