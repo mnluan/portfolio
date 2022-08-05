@@ -303,8 +303,8 @@ html{
 .form textarea:hover,
 .form textarea:focus {
   outline: none;
-  border-color: dodgerblue;
-  box-shadow: 0 0 0 3px #4dc8ff;
+  border-color: #470d8a;
+  box-shadow: 0 0 0 3px #6625b1;
 }
 
 .form button {
@@ -323,7 +323,7 @@ html{
 .form button:hover,
 .form button:focus {
   outline: none;
-  background: #4dc8ff;
+  background: #470d8a;
 }
 
 /*Screen adjusts*/
