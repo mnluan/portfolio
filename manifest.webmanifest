@@ -1,0 +1,16 @@
+{
+    "id": "/",
+    "short_name": "portfolio",
+    "name": "Portfolio",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "background-color": "#000000",
+    "description":"Portfolio DEV - Luan Moraes do Nascimento",
+    "icons":[{
+        "src": "./res/img/logo.png",
+        "type": "image/png",
+        "sizes": "500x500"
+    }]
+}
